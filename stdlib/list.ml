@@ -114,6 +114,10 @@ let[@tail_mod_cons] rec map_append f lm la = match lm with
   | hd1 :: hd2 :: hd3 :: hd4 :: tl ->
      f hd1 :: f hd2 :: f hd3 :: f hd4 :: map_append f tl la
 
+let rec rev_map_append f lm la = match lm with
+  | [] -> la
+  | hd :: tl -> rev_map_append f tl (f hd :: la)
+
 let rec iter f = function
     [] -> ()
   | a::l -> f a; iter f l
