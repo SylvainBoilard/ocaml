@@ -62,6 +62,10 @@ Working version
   with js_of_ocaml
   (Hugo Heuzard, review by Gabriel Scherer)
 
+- #13554: Add `List.map_append` and `List.rev_map_append`.
+  (Sylvain Boilard and Hugo Heuzard, review by Nicolás Ojeda Bär and
+   Damien Doligez)
+
 ### Other libraries:
 
 - #13429: add `Unix.sigwait`, a binding to the `sigwait` system call;
